@@ -1,6 +1,6 @@
 # npmtest-node-red-dashboard
 
-#### basic test coverage for  node-red-dashboard (v2.3.8)  [![npm package](https://img.shields.io/npm/v/npmtest-node-red-dashboard.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-red-dashboard) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-red-dashboard.svg)](https://travis-ci.org/npmtest/node-npmtest-node-red-dashboard)
+#### basic test coverage for  [node-red-dashboard (v2.3.9)](https://github.com/node-red/node-red-dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-node-red-dashboard.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-red-dashboard) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-red-dashboard.svg)](https://travis-ci.org/npmtest/node-npmtest-node-red-dashboard)
 
 #### A set of dashboard nodes for Node-RED
 
@@ -35,15 +35,8 @@
 ```json
 
 {
-    "name": "node-red-dashboard",
-    "version": "2.3.8",
-    "description": "A set of dashboard nodes for Node-RED",
-    "keywords": [
-        "node-red"
-    ],
-    "main": "none",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "bugs": {
+        "url": "https://github.com/node-red/node-red-dashboard/issues"
     },
     "contributors": [
         {
@@ -65,46 +58,16 @@
             "name": "Laurence Stant"
         }
     ],
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/node-red/node-red-dashboard.git"
-    },
-    "node-red": {
-        "version": ">=0.14.0",
-        "nodes": {
-            "ui_base": "nodes/ui_base.js",
-            "ui_button": "nodes/ui_button.js",
-            "ui_dropdown": "nodes/ui_dropdown.js",
-            "ui_switch": "nodes/ui_switch.js",
-            "ui_slider": "nodes/ui_slider.js",
-            "ui_numeric": "nodes/ui_numeric.js",
-            "ui_text_input": "nodes/ui_text_input.js",
-            "ui_date_picker": "nodes/ui_date_picker.js",
-            "ui_colour_picker": "nodes/ui_colour_picker.js",
-            "ui_form": "nodes/ui_form.js",
-            "ui_text": "nodes/ui_text.js",
-            "ui_gauge": "nodes/ui_gauge.js",
-            "ui_chart": "nodes/ui_chart.js",
-            "ui_audio": "nodes/ui_audio.js",
-            "ui_toast": "nodes/ui_toast.js",
-            "ui_ui_control": "nodes/ui_ui_control.js",
-            "ui_template": "nodes/ui_template.js",
-            "ui_link": "nodes/ui_link.js",
-            "ui_tab": "nodes/ui_tab.js",
-            "ui_group": "nodes/ui_group.js"
-        }
-    },
     "dependencies": {
         "serve-static": "^1.11.2",
         "socket.io": "^1.7.3"
     },
+    "description": "A set of dashboard nodes for Node-RED",
     "devDependencies": {
         "angular": "~1.5.11",
         "angular-animate": "~1.5.11",
         "angular-aria": "~1.5.11",
         "angular-chart.js": "^1.0.3",
-        "angularjs-color-picker": "^2.7.2",
         "angular-material": "^1.1.1",
         "angular-material-icons": "^0.7.1",
         "angular-messages": "~1.5.11",
@@ -112,6 +75,7 @@
         "angular-route": "~1.5.11",
         "angular-sanitize": "~1.5.11",
         "angular-touch": "~1.5.11",
+        "angularjs-color-picker": "^2.7.2",
         "chart.js": "~2.3.0",
         "d3": "^3.5.17",
         "font-awesome": "^4.7.0",
@@ -142,6 +106,58 @@
         "svg-morpheus": "^0.3.0",
         "tinycolor2": "^1.4.1"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "6c31d9d87679413f0f3e0cec331111fae84e8d0c",
+        "tarball": "https://registry.npmjs.org/node-red-dashboard/-/node-red-dashboard-2.3.9.tgz"
+    },
+    "gitHead": "bdf59ceedd3a133c170081b850d5799b6c429f36",
+    "homepage": "https://github.com/node-red/node-red-dashboard#readme",
+    "keywords": [
+        "node-red"
+    ],
+    "license": "Apache-2.0",
+    "main": "none",
+    "maintainers": [
+        {
+            "name": "dceejay"
+        }
+    ],
+    "name": "node-red-dashboard",
+    "node-red": {
+        "version": ">=0.14.0",
+        "nodes": {
+            "ui_base": "nodes/ui_base.js",
+            "ui_button": "nodes/ui_button.js",
+            "ui_dropdown": "nodes/ui_dropdown.js",
+            "ui_switch": "nodes/ui_switch.js",
+            "ui_slider": "nodes/ui_slider.js",
+            "ui_numeric": "nodes/ui_numeric.js",
+            "ui_text_input": "nodes/ui_text_input.js",
+            "ui_date_picker": "nodes/ui_date_picker.js",
+            "ui_colour_picker": "nodes/ui_colour_picker.js",
+            "ui_form": "nodes/ui_form.js",
+            "ui_text": "nodes/ui_text.js",
+            "ui_gauge": "nodes/ui_gauge.js",
+            "ui_chart": "nodes/ui_chart.js",
+            "ui_audio": "nodes/ui_audio.js",
+            "ui_toast": "nodes/ui_toast.js",
+            "ui_ui_control": "nodes/ui_ui_control.js",
+            "ui_template": "nodes/ui_template.js",
+            "ui_link": "nodes/ui_link.js",
+            "ui_tab": "nodes/ui_tab.js",
+            "ui_group": "nodes/ui_group.js"
+        }
+    },
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/node-red/node-red-dashboard.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "2.3.9",
     "bin": {}
 }
 ```
